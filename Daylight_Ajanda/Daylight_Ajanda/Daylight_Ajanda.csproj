@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FAB30665-EC1F-498E-B1CF-C11EEF9B289A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Daylight_Ajanda</RootNamespace>
+    <AssemblyName>Daylight_Ajanda</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\..\..\OneDrive\Masaüstü\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBook.Designer.cs">
+      <DependentUpon>frmBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGunlugum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGunlugum.Designer.cs">
+      <DependentUpon>frmGunlugum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGunluk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGunluk.Designer.cs">
+      <DependentUpon>frmGunluk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHedefArsiv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHedefArsiv.Designer.cs">
+      <DependentUpon>frmHedefArsiv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHedefler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHedefler.Designer.cs">
+      <DependentUpon>frmHedefler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNote.Designer.cs">
+      <DependentUpon>frmNote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs" />
+    <Compile Include="UserProvider.cs" />
+    <Compile Include="frmPlans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPlans.Designer.cs">
+      <DependentUpon>frmPlans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserPanel.Designer.cs">
+      <DependentUpon>frmUserPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserProfileUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserProfileUpdate.Designer.cs">
+      <DependentUpon>frmUserProfileUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="frmSingUpPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSingUpPanel.Designer.cs">
+      <DependentUpon>frmSingUpPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUserPanelLognIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUserPanelLognIn.Designer.cs">
+      <DependentUpon>frmUserPanelLognIn.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmBook.resx">
+      <DependentUpon>frmBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGunlugum.resx">
+      <DependentUpon>frmGunlugum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGunluk.resx">
+      <DependentUpon>frmGunluk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHedefArsiv.resx">
+      <DependentUpon>frmHedefArsiv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHedefler.resx">
+      <DependentUpon>frmHedefler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNote.resx">
+      <DependentUpon>frmNote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPlans.resx">
+      <DependentUpon>frmPlans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserPanel.resx">
+      <DependentUpon>frmUserPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserProfileUpdate.resx">
+      <DependentUpon>frmUserProfileUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="frmSingUpPanel.resx">
+      <DependentUpon>frmSingUpPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUserPanelLognIn.resx">
+      <DependentUpon>frmUserPanelLognIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8058280.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com %288%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com %289%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com %2810%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com %2811%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com %2812%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com %2813%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com %2815%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
